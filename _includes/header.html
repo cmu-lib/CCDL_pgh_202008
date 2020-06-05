@@ -11,7 +11,7 @@ Derived from https://github.com/jekyll/minima/blob/38a84a949f9753c4542e25f422935
     {%- assign header_home = "/" -%}
     {%- if site.header_home -%}
       {%- assign header_home = site.header_home -%}
-    {%- else -%}
+    {%- endif -%}
     <a class="site-title" rel="author" href="{{ header_home | relative_url }}">{{ site.title | escape }}</a>
 
     {%- if page_paths -%}
