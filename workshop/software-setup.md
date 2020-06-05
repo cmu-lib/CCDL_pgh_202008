@@ -1,5 +1,6 @@
 ---
 title: Software Setup
+nav_title: Required Software
 ---
 
 ## Required software
