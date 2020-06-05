@@ -1,5 +1,5 @@
 ---
-title: CCDL Virtual Workshop: 2020 June Training
+title: "CCDL Virtual Workshop: 2020 June Training"
 ---
 
 **If you are a participant in in the training workshop and you've landed here, visit https://alexslemonade.github.io/2020-june-training/workshop/HOME to get started!**
