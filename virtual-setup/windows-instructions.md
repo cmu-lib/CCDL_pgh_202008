@@ -17,7 +17,7 @@ title: Windows set up instructions for virtual workshops
 ## Zoom
 
 If you do not have Zoom installed yet, you will need to download the client.
-To do so, go to https://zoom.us/download and click the button to download the latest version of **Zoom Client for Meetings**
+To do so, go to <https://zoom.us/download> and click the button to download the latest version of **Zoom Client for Meetings**
 
 <img src="screenshots/windows-zoom-download.png" width="500" alt="Zoom Download Page">
 
@@ -59,7 +59,7 @@ Turning these settings off will make it easier to interact with other windows du
 ## Slack
 
 Download the 64-bit Slack application from:
-https://slack.com/downloads/instructions/windows
+<https://slack.com/downloads/instructions/windows>
 
 <img src="screenshots/windows-slack-download.png" alt="Slack download" width="750">
 
