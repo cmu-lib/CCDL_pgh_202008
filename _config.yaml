@@ -38,6 +38,6 @@ header_pages:
   - workshop/workshop-materials.md
   - workshop/resources-for-consultation-sessions.md
 author: Childhood Cancer Data Lab
-# email: user@site
+email: training@ccdatalab.org
 twitter_username: CancerDataLab
 github_username:  AlexsLemonade
