@@ -1,5 +1,5 @@
 ---
-title: Linux set up instructions for virtual workshops
+title: Linux Set Up Instructions for Virtual Workshops
 ---
 
 *Note: These instructions were tested on Ubuntu 18.04 LTS.
