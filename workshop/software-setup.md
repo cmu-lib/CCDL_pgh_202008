@@ -18,6 +18,11 @@ Please take a look at our procedures to familiarize yourself with how we will be
 * [Zoom procedures](../virtual-setup/zoom-procedures.md)
 * [Slack procedures](../virtual-setup/slack-procedures.md)
 
+### Linux
+
+* [Zoom instructions](../virtual-setup/linux-instructions.md#zoom)
+* [Slack instructions](../virtual-setup/linux-instructions.md#slack)
+
 ### MacOS
 
 * [Zoom instructions](../virtual-setup/mac-instructions.md#zoom)
