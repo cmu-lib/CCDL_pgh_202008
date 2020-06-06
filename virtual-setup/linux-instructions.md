@@ -81,6 +81,8 @@ Double-click the `deb` file to open the Ubuntu Software Center and then select `
 
 <img src = "screenshots/linux-slack-install-ubuntu-software.png" width = "500">
 
+To open Slack, search your computer for Slack and double-click the icon.
+
 ### Logging in to the Cancer Data Science workspace
 
 Open <http://ccdatalab.org/slack> in your browser.
