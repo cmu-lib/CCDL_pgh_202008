@@ -11,7 +11,7 @@ This guide will take you through how to get your data onto our RStudio server so
 
 - Initially, we have equipped you with **50 GB of space** (if the data you would like to upload is larger than this, please consult one of the CCDL team members through Slack for assistance).
 
-- If you don't have your own data that you are looking to analyze, but would like real transcriptomic datasets to practice with, see the [Resources for Consultation Sessions page](../virtual-workshop/resources-for-consultation-sessions.md) and/or ask a CCDL team member for recommendations.
+- If you don't have your own data that you are looking to analyze, but would like real transcriptomic datasets to practice with, see the [Resources for Consultation Sessions page](../workshop/resources-for-consultation-sessions.md) and/or ask a CCDL team member for recommendations.
 
 - You will have access to our RStudio Server for 6 months.
 We will email you with a reminder 6 months from now so you can make sure to remove any files from our RStudio Server that you may find useful before your access is revoked and the files are deleted.
@@ -45,7 +45,7 @@ If you are retrieving your data from online, perhaps from a publicly available r
 
 ![Terminal tab](screenshots/rstudio-session-terminal.png)
 
-**Step 2)** Copy over the [wget template script](../template-script/wget-TEMPLATE.sh).
+**Step 2)** Copy over the [wget template script]({{site.repository_url}}/tree/master/working-with-your-data/template-scripts/wget-TEMPLATE.sh).
 
 You'll find the `wget` template script in the `shared-data/working-with-your-data/template-script/` folder.
 In the RStudio Server, you can click the check mark next to the file name, then go to `More` > and choose `Copy To`.
