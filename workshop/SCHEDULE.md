@@ -11,12 +11,13 @@ nav_title: Schedule
 |-------------|------------------------------------------------|
 | **Day 1**   | **2020-06-22** <br> [Introduction to R and the Tidyverse](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/README.md)                      
 | 12:00       | Welcome, Introductions and Getting Started  |
-| 12:30       | [Introduction to base R](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/01-intro_to_base_R.nb.html) with [additional exercises](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/04a-intro_to_R_exercise.Rmd) |
-|             | [Introduction to ggplot2](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/02-intro_to_ggplot2.nb.html) |
+| 12:30       | [Introduction to base R](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/01-intro_to_base_R.nb.html) |
+|             | [Introduction to R Exercise](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/04a-intro_to_R_exercise.Rmd)
 | 3:30 		 | [Consultation session](workshop-structure.md#consultation-sessions) begins |
 | 5:00        | End             |
 | **Day 2**   | **2020-06-23** <br> [Introduction to R and the Tidyverse](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/README.md)      |
-| 12:00       | [Introduction to the Tidyverse](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/03-intro_to_tidyverse.nb.html) |
+| 12:00      | [Introduction to ggplot2](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/02-intro_to_ggplot2.nb.html) |
+|             | [Introduction to the Tidyverse](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/03-intro_to_tidyverse.nb.html) |
 |             | [Introduction to Tidyverse Exercises - part 1](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/04b-intro_to_tidyverse_exercise-part-1.Rmd) |
 |             | [Introduction to Tidyverse Exercises - part 2](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/04c-intro_to_tidyverse_exercise-part-2.Rmd) |
 | 3:30        | [Consultation session](workshop-structure.md#consultation-sessions) begins |
