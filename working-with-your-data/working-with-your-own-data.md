@@ -47,7 +47,7 @@ If you are retrieving your data from online, perhaps from a publicly available r
 
 **Step 2)** Copy over the [wget template script]({{site.repository_url}}/tree/master/working-with-your-data/template-scripts/wget-TEMPLATE.sh).
 
-You'll find the `wget` template script in the `template-script/` folder.
+You'll find the `wget` template script in the `shared-data/working-with-your-data/template-script/` folder.
 In the RStudio Server, you can click the check mark next to the file name, then go to `More` > and choose `Copy To`.
 
 **Step 3)** Set up your `wget` command in the template script we started for you.
@@ -74,9 +74,28 @@ For that, we can use the `-O`, or `output` option with our `wget` command and sp
 wget -O <FILE_PATH_TO_SAVE_TO> <URL>
 ```
 
-*Specific example:* Here's an example where we will download that same array express file, but instead save it to the `data` folder and call it `some_array_data.zip`.
+*Specific example: using the -O option* Here's another example where we will download that same array express file, but instead save it to the `data` folder and call it `some_array_data.zip`.
 (Best to keep the file extension consistent to avoid troubles!)
 
+Before we can `wget` the files, we should navigate to our home directory and make a `data/` folder to save to.
+[Keeping our files organized](https://www.thinkingondata.com/how-to-organize-data-science-projects/) can save us from some headaches in the future.
+
+```
+# Navigate to home directory
+cd ~
+
+# List the folders and files of our current directory
+ls
+```
+If the `ls` command does not include `data` in its print out, it means we will need to make a `data` folder with the `mkdir` command.
+
+```
+# Make a new data folder
+mkdir data
+```
+
+You can double check that you successfully made a new folder by running `ls` again.
+Now we are ready to wget data and copy it to our `data/` folder.
 ```
 wget -O data/some_array_data.zip https://www.ebi.ac.uk/arrayexpress/files/E-GEOD-67851/E-GEOD-67851.processed.1.zip
 ```
