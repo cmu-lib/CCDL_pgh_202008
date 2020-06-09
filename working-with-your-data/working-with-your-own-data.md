@@ -45,7 +45,7 @@ If you are retrieving your data from online, perhaps from a publicly available r
 
 ![Terminal tab](screenshots/rstudio-session-terminal.png)
 
-**Step 2)** Copy over the [wget template script]({{site.repository_url}}/tree/master/working-with-your-data/template-scripts/wget-TEMPLATE.sh).
+**Step 2)** Copy over the [wget template script](https://github.com/AlexsLemonade/2020-june-training/blob/master/working-with-your-data/template-scripts/wget-TEMPLATE.sh).
 
 You'll find the `wget` template script in the `shared-data/working-with-your-data/template-script/` folder.
 In the RStudio Server, you can click the check mark next to the file name, then go to `More` > and choose `Copy To`.
@@ -74,7 +74,7 @@ For that, we can use the `-O`, or `output` option with our `wget` command and sp
 wget -O <FILE_PATH_TO_SAVE_TO> <URL>
 ```
 
-*Specific example:* Here's an example where we will download that same array express file, but instead save it to the `data` folder and call it `some_array_data.zip`.
+*Specific example: using the -O option* Here's another example where we will download that same array express file, but instead save it to the `data` folder and call it `some_array_data.zip`.
 (Best to keep the file extension consistent to avoid troubles!)
 
 Before we can `wget` the files, we should navigate to our home directory and make a `data/` folder to save to.
