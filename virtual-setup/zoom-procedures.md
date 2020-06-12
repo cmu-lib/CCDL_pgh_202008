@@ -178,7 +178,7 @@ To bring up chat, click the chat icon in the control bar.
 
 The host of the Zoom meeting will assign you to a breakout room if you need 1:1 help and during certain periods of instruction.
 
-When you are assigned to a breakout, you will see a prompt like the one below.
+When you are assigned to a breakout room, you will see a prompt like the one below.
 Click `Join Breakout Room` to go to the breakout room.
 
 <img src = "screenshots/zoom-join-breakout-room.png" width = "500">
