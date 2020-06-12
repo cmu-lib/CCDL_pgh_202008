@@ -9,7 +9,7 @@ Our goals in constructing the virtual workshop structure are the following:
 * You are able to ask questions and receive 1:1 assistance as needed during instruction. Because our instruction is almost entirely through hands-on exercises, we want to make sure we can help you through any difficulties or errors you may encounter.
 * You have the opportunity to practice the skills you learn during instruction in consultation sessions with the support of your instructors.
 * You receive consultation about the data you are working with to answer your research questions.
-* You have opportunities to interact with other participants working on similar problems.
+* You have opportunities to interact with other participants working on similar problems and will work on exercises as part of a small group during some periods of instruction.
 
 This document is designed to give you an idea of what your participation in the workshop will be like and outlines the communication processes we have developed in service of these goals.
 
@@ -21,6 +21,7 @@ Typically you will be asked to navigate to a specific R Notebook file and you wi
 You will have access to [a private training-specific Slack channel](../virtual-setup/slack-procedures.md#using-the-training-specific-channel) in [Cancer Data Science Slack](https://www.ccdatalab.org/slack) that you can use as a forum to post questions.
 This channel will be monitored by instructors.
 Instruction will be [recorded and distributed to course participants](../virtual-setup/zoom-procedures.md#zoom-recordings) (not posted publicly).
+During periods of instruction where everyone in the course will work on the same set of exercises, you will be placed in a Zoom breakout room with an instructor and other course participants.
 
 
 ### Your instructors' roles during instruction
@@ -33,7 +34,7 @@ The host makes sure any time-sensitive questions or problems are addressed durin
 The host may also group you into breakout rooms for exercises as needed.
 * All other instructors are on-hand to monitor the training specific Slack channel, answer questions, provide 1:1 assistance, or help with technology or login issues.
 
-We will clearly identify the role of each instructor at the beginning of instruction.
+We will clearly identify the role of each instructor at the beginning of instruction. 
 
 ### Using communication platforms during instruction
 
@@ -44,8 +45,9 @@ You can read more about how we use Zoom and Slack in the [Zoom procedures](../vi
 | If this happens | Use this platform |
 |-----------------|-------------------|
 | I need something clarified before we move on with instruction | [Use Zoom chat to message the meeting host with your question or use the `Raise Hand` button on Zoom](../virtual-setup/zoom-procedures.md#interacting-with-instructors-and-providing-feedback) |
-| I am stuck with an error message and am no longer able to follow the hands-on exercise | [Use Zoom chat](../virtual-setup/zoom-procedures.md#chat) to [message the meeting host and let them know you need 1:1 assistance](../virtual-setup/zoom-procedures.md#asking-for-11-help-during-instruction) - they will pair you with an available instruction in a [Zoom breakout room](../virtual-setup/zoom-procedures.md#joining-a-breakout-room) |
+| I am stuck with an error message and am no longer able to follow the hands-on instruction | [Use Zoom chat](../virtual-setup/zoom-procedures.md#chat) to [message the meeting host and let them know you need 1:1 assistance](../virtual-setup/zoom-procedures.md#asking-for-11-help-during-instruction) - they will pair you with an available instruction in a [Zoom breakout room](../virtual-setup/zoom-procedures.md#joining-a-breakout-room) |
 | I have a general or conceptual question that can be addressed later in the lecture or asynchronously | Post in the [training-specific Slack channel](../virtual-setup/slack-procedures.md#using-the-training-specific-channel) |
+| I am in a breakout room and want to ask my instructor a question about the exercise | You can [unmute yourself](../virtual-setup/zoom-procedures.md#audio) and ask or [use the chat window to message the instructor](../virtual-setup/zoom-procedures.md#chat) who will be designated as a Host or Co-host of the meeting; you may be asked to [share your screen](../virtual-setup/zoom-procedures.md#sharing-your-screen-in-zoom) |
 | I am having trouble with my login credentials | [Use Slack to direct message a CCDL staff member](../virtual-setup/slack-procedures.md#using-direct-messages-during-training) that is not leading instruction or the host of the Zoom meeting |
 | I am having technical difficulties that preclude me from using Zoom and Slack | Email [training@ccdatalab.org](mailto:training@ccdatalab.org) |
 
@@ -53,7 +55,7 @@ You can read more about how we use Zoom and Slack in the [Zoom procedures](../vi
 
 **During consultation sessions**, you can work through exercise notebooks included as part of the course, with your own data, or with publicly available data related to your research.
 
-The main method we use for communication durion consultation sessions is Slack.
+The main method we use for communication during consultation sessions is Slack.
 You can use the training-specific private channel to post errors, get help with debugging, and interact with other participants as they work through exercises.
 
 Zoom is the platform that we use to facilitate sharing your screen with an instructor, which may come in handy during consultation.
@@ -72,7 +74,7 @@ For these reasons, the main process for communication on consultation days is th
 
 _Remember – if you have a question, another person in the course almost certainly has the same question!_
 
-<!--In addition, because the CCDL team is also currently all-remote, keeping most communication to the training-specific Slack channel allows us to better coordinate our efforts and make sure you get the support you need.-->
+In addition, because the CCDL team is also currently all-remote, keeping most communication to the training-specific Slack channel allows us to better coordinate our efforts and make sure you get the support you need.
 
 You can read more about how we use Zoom and Slack in the [Zoom procedures](../virtual-setup/zoom-procedures.md) and [Slack procedures](../virtual-setup/slack-procedures.md) documentation. We've put together the table below to serve as a guide at a glance.
 
