@@ -191,6 +191,11 @@ That will bring up the popup window shown below; click `Join Breakout Room`.
 
 <img src = "screenshots/zoom-join-breakout-room-rejoin.png" width = "500">
 
+When you're in a breakout room, you may receive messages from the host.
+Those messages will appear as green banners at the top of your Zoom window.
+
+<img src = "screenshots/zoom-breakout-room-msg-from-host.png" width="400">
+
 ### Sharing your screen in Zoom
 
 Sharing your screen in a Zoom breakout room during instruction or one on one Zoom meetings may be required to allow instructors to best provide assistance.
@@ -222,8 +227,9 @@ This will bring up a pop up that will give you the option to leave the Zoom call
 
 <img src = "screenshots/zoom-to-leave-or-not-to-leave.png" width="400">
 
-You may receive messages from the host or a notification that the host is closing all breakout rooms while in a breakout room.
-Those will appear as green banners at the top of your Zoom window.
+If the host of the meeting closes the breakout rooms at the end of a session, you may see a prompt with a countdown; you can use the `Return to the Main Session` button to return before the countdown ends.
+
+<img src = "screenshots/zoom-breakout-room-countdown.png" width = "400">
 
 ## Zoom during consultation
 
