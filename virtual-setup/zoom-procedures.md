@@ -99,6 +99,9 @@ In general, the "host" will not be the instructor, but another member of the CCD
 CCDL staff will provide you with a link to join a Zoom call for each day during training.
 _Please do not share this link._
 
+**Check your email or the `#2020-june-training` Slack channel for the Zoom links each day.
+They go out ~1 hour prior to the beginning of the session.**
+
 On the first day of instruction, we will ask you to introduce yourself on the Zoom call so please be ready with computer audio (more on that below).
 
 ### Joining a Zoom call via link
@@ -164,8 +167,9 @@ Zoom breakout rooms are a feature that allow us to assign course participants an
 We will use Zoom breakout rooms in the following capacities during training:
 
 * To provide 1:1 help during instruction as needed.
-* To group participants during exercise portions of instruction.
-* _Optionally_ to group participants during consultation sessions who are working on similar tasks or the same exercise notebooks.
+* To group participants together with an instructor: 
+  * During guided exercise portions of instruction.
+  * At the end of an instruction session, to answer any questions and introduce the exercises that are designed to help you to practice the material covered during the main session.
 
 ### Asking for 1:1 help during instruction
 
