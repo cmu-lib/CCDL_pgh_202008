@@ -21,8 +21,11 @@ Typically you will be asked to navigate to a specific R Notebook file and you wi
 You will have access to [a private training-specific Slack channel](../virtual-setup/slack-procedures.md#using-the-training-specific-channel) in [Cancer Data Science Slack](https://www.ccdatalab.org/slack) that you can use as a forum to post questions.
 This channel will be monitored by instructors.
 Instruction will be [recorded and distributed to course participants](../virtual-setup/zoom-procedures.md#zoom-recordings) (not posted publicly).
+
 During periods of instruction where everyone in the course will work on the same set of exercises, you will be placed in a Zoom breakout room with an instructor and other course participants.
 
+We will use the last half hour of instruction sessions each day (Monday-Thursday) to break into groups to answer any questions and to introduce the set of exercise notebooks related to the material covered during instruction.
+We use Zoom breakout room functionality for these groups.
 
 ### Your instructors' roles during instruction
 
@@ -47,7 +50,7 @@ You can read more about how we use Zoom and Slack in the [Zoom procedures](../vi
 | I need something clarified before we move on with instruction | [Use Zoom chat to message the meeting host with your question or use the `Raise Hand` button on Zoom](../virtual-setup/zoom-procedures.md#interacting-with-instructors-and-providing-feedback) |
 | I am stuck with an error message and am no longer able to follow the hands-on instruction | [Use Zoom chat](../virtual-setup/zoom-procedures.md#chat) to [message the meeting host and let them know you need 1:1 assistance](../virtual-setup/zoom-procedures.md#asking-for-11-help-during-instruction) - they will pair you with an available instruction in a [Zoom breakout room](../virtual-setup/zoom-procedures.md#joining-a-breakout-room) |
 | I have a general or conceptual question that can be addressed later in the lecture or asynchronously | Post in the [training-specific Slack channel](../virtual-setup/slack-procedures.md#using-the-training-specific-channel) |
-| I am in a breakout room and want to ask my instructor a question about the exercise | You can [unmute yourself](../virtual-setup/zoom-procedures.md#audio) and ask or [use the chat window to message the instructor](../virtual-setup/zoom-procedures.md#chat) who will be designated as a Host or Co-host of the meeting; you may be asked to [share your screen](../virtual-setup/zoom-procedures.md#sharing-your-screen-in-zoom) |
+| I am in a breakout room and want to ask my instructor a question | [Use the `Raise Hand` button on Zoom](../virtual-setup/zoom-procedures.md#interacting-with-instructors-and-providing-feedback), your instructor will ask you to [unmute yourself](../virtual-setup/zoom-procedures.md#audio) and ask your question. You can [use the chat window to message the instructor](../virtual-setup/zoom-procedures.md#chat), who will be designated as a Host or Co-host of the meeting, if you prefer. You may be asked to [share your screen](../virtual-setup/zoom-procedures.md#sharing-your-screen-in-zoom) if you encounter errors. |
 | I am having trouble with my login credentials | [Use Slack to direct message a CCDL staff member](../virtual-setup/slack-procedures.md#using-direct-messages-during-training) that is not leading instruction or the host of the Zoom meeting |
 | I am having technical difficulties that preclude me from using Zoom and Slack | Email [training@ccdatalab.org](mailto:training@ccdatalab.org) |
 
@@ -69,7 +72,7 @@ If you need to share your screen with an instructor during the a consultation da
 
 ### Using communication platforms during consultation sessions
 
-Our goal during consultation days is to make sure you get the support you need from instructors, to facilitate peer-to-peer learning, and to maximize the information that is available to everyone a form that is discoverable in the future.
+Our goal during consultation sessions is to make sure you get the support you need from instructors, to facilitate peer-to-peer learning, and to maximize the information that is available to everyone a form that is discoverable in the future.
 For these reasons, the main process for communication on consultation days is the training-specific Slack channel.
 
 _Remember – if you have a question, another person in the course almost certainly has the same question!_
