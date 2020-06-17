@@ -31,7 +31,7 @@ nav_title: Schedule
 | **Day 4**   | **2020-06-25** <br> [Introduction to Bulk RNA-seq](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/RNA-seq/README.md) | 
 | 12:00       | Exercise: [Neuroblastoma Cell Line tximport](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/RNA-seq/04-nb_cell_line_tximport.md) | Zoom: Breakout Rooms (meet in main session to begin)
 | 1:30        | Bulk RNA-seq IV: [Differential Expression Analysis](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/RNA-seq/05-nb_cell_line_DESeq2.nb.html)               | Zoom: Main Session |
-| 3:00        | Questions and introduction to the exercise: <br> [Bulk RNA-seq Exercise](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/RNA-seq/06-bulk_rnaseq_exercise.Rmd) | Zoom Breakout Rooms |
+| 3:00        | Questions and introduction to the exercise: <br> [Bulk RNA-seq Exercise](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/RNA-seq/06-bulk_rnaseq_exercise.Rmd) | Zoom: Breakout Rooms |
 | 3:30        | [Consultation session](workshop-structure.md#consultation-sessions) begins |   `#2020-june-training` Slack channel
 | 5:00        | End             |
 | **Day 5**   | **2020-06-36** <br> Consultation and Presentations |
