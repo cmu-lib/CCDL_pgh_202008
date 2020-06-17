@@ -167,8 +167,9 @@ Zoom breakout rooms are a feature that allow us to assign course participants an
 We will use Zoom breakout rooms in the following capacities during training:
 
 * To provide 1:1 help during instruction as needed.
-* To group participants during exercise portions of instruction.
-* _Optionally_ to group participants during consultation sessions who are working on similar tasks or the same exercise notebooks.
+* To group participants together with an instructor: 
+  * During guided exercise portions of instruction.
+  * At the end of an instruction session, to answer any questions and introduce the exercises that are designed to help you to practice the material covered during the main session.
 
 ### Asking for 1:1 help during instruction
 
