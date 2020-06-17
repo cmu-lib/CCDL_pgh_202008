@@ -3,16 +3,16 @@ title: Virtual Workshop Schedule
 nav_title: Schedule
 ---
 
-<!--See an example from a past virtual workshop here: https://github.com/AlexsLemonade/2020-may-training/wiki/Schedule --> 
+<!--See an example from a past virtual workshop here: https://github.com/AlexsLemonade/2020-may-training/wiki/Schedule -->
 
 *Draft schedule subject to changes*
 
 | Time        | Topic                                          | Location |
 |-------------|------------------------------------------------|----------|
-| **Day 1**   | **2020-06-22** <br> [Introduction to R and the Tidyverse](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/README.md)                      
-| 12:00       | Welcome, Introductions and Getting Started  | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
-| 1:00       | [Introduction to base R](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/01-intro_to_base_R.nb.html) | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
-| 3:00        | Questions and introduction to the exercise: <br> [Introduction to R](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/01b-intro_to_base_R_exercise.Rmd) | Zoom: [Breakout Rooms](../virtual-setup/zoom-procedures.md#using-zoom-breakout-rooms) |
+| **Day 1**   | **2020-06-22** <br> [Introduction to R and the Tidyverse](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/README.md)
+| 12:00       | Welcome, Introductions and Getting Started <br> [Workshop Intro Slides (pdf)](../slides/2020-06-22_01_CCDL_Workshop_Intro.pdf) | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
+| 1:00       | [Introduction to base R](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/01-intro_to_base_R.nb.html) <br> [Intro to RStudio Slides (pdf)](../slides/2020-06-22_02_Intro_to_RStudio_Server.pdf) | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
+| 3:00        | Questions and introduction to the exercise: <br> [Introduction to R Exercise](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/01b-intro_to_base_R_exercise.Rmd) | Zoom: [Breakout Rooms](../virtual-setup/zoom-procedures.md#using-zoom-breakout-rooms) |
 | 3:30 		 | [Consultation session](workshop-structure.md#consultation-sessions) begins | [`#2020-june-training` Slack channel](../virtual-setup/slack-procedures.md#general-use) |
 | 5:00        | End             | |
 | **Day 2**   | **2020-06-23** <br> [Introduction to R and the Tidyverse](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/README.md)      | |
@@ -22,7 +22,7 @@ nav_title: Schedule
 | 3:30        | [Consultation session](workshop-structure.md#consultation-sessions) begins | [`#2020-june-training` Slack channel](../virtual-setup/slack-procedures.md#general-use) |
 | 5:00        | End             |
 | **Day 3**   | **2020-06-24** <br> [Introduction to Bulk RNA-seq](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/RNA-seq/README.md) | 
-| 12:00       | Bulk RNA-seq I: [QC, trim, and quantification with Salmon](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/RNA-seq/01-qc_trim_quant.md)            | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call)
+| 12:00       | Bulk RNA-seq I: [QC, trim, and quantification with Salmon](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/RNA-seq/01-qc_trim_quant.md) <br>  [Bulk RNAseq Intro Slides (pdf)](../slides/2020-06-24_01_Intro_to_RNAseq.pdf)     | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call)
 | 1:30       | Bulk RNA-seq II: [Gene-Level Summaries with tximport](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/RNA-seq/02-gastric_cancer_tximport.nb.html) | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call)
 | 2:30        | Bulk RNA-seq III: [Exploratory Analyses](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/RNA-seq/03-gastric_cancer_exploratory.nb.html) |  Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call)
 | 3:00        | Questions and introduction to the exercise: <br> [Exploratory Data Analysis](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}RNA-seq/03b-exploratory_data_analysis_exercise.Rmd) | Zoom: [Breakout Rooms](../virtual-setup/zoom-procedures.md#using-zoom-breakout-rooms) |
