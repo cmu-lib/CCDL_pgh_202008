@@ -11,7 +11,7 @@ nav_title: Schedule
 |-------------|------------------------------------------------|----------|
 | **Day 1**   | **2020-06-22** <br> [Introduction to R and the Tidyverse](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/README.md)                      
 | 12:00       | Welcome, Introductions and Getting Started  | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
-| 12:30       | [Introduction to base R](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/01-intro_to_base_R.nb.html) | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
+| 1:00       | [Introduction to base R](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/01-intro_to_base_R.nb.html) | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
 | 3:00        | Questions and introduction to the exercise: <br> [Introduction to R](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/01b-intro_to_base_R_exercise.Rmd) | Zoom: [Breakout Rooms](../virtual-setup/zoom-procedures.md#using-zoom-breakout-rooms) |
 | 3:30 		 | [Consultation session](workshop-structure.md#consultation-sessions) begins | [`#2020-june-training` Slack channel](../virtual-setup/slack-procedures.md#general-use) |
 | 5:00        | End             | |
