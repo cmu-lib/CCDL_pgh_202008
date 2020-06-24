@@ -89,7 +89,7 @@ core_plot <- ggplot(tumor_normal_df,
 core_plot #draw the plot!
 ```
 
-That all-blue color scheme isn't the most dramatic, but we can adjust it using some of `ggplot2`s functions that have the form `scale_color_XXX()`.
+That all-blue color scheme isn't the most dramatic, but we can adjust it using some of `ggplot2`s functions that have the form `scale_color_*()` where `*` is some additional word that specifies how the color scale will be constructed.
 
 The first one I will use is scale_color_continuous() to switch to the  [`viridis` color scheme](https://ggplot2.tidyverse.org/reference/scale_viridis.html), which is a nicely color-blind friendly scheme that is used most prominently by the python `matplotlib` library.
 
@@ -143,7 +143,7 @@ core_plot +
 
 ## Colors vs fills
 
-One often confusing wrinkle is that ggplot specifies colors of points and lines differently from the fill colors of boxes and other shapes, and we will have to adjust our `scale_color_XX()` functions to scale_fill_XX() functions in many cases.
+One often confusing wrinkle is that ggplot specifies colors of points and lines differently from the fill colors of boxes and other shapes, and we will have to adjust our `scale_color_*()` functions to `scale_fill_*()` functions in many cases.
 
 Below, I will make a plot of the distribution of expression for each contrast form `stats_df`, using a violin plot. 
 To do this, I will set the `contrast` as the x axis and the `avg_expression` as the y. 
