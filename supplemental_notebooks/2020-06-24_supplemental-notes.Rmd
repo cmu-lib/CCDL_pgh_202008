@@ -1,0 +1,211 @@
+---
+title: "Intro to R supplemental info"
+author: Josh Shapiro for CCDL
+date: 2020-05-05
+output:
+  html_notebook:
+    toc: true
+    toc_float: true
+---
+
+## Introduction
+
+This notebook is designed to address questions that came up in the Introduction to R and the Tidyverse modules during CCDL training. 
+
+
+## Color Scales
+
+There is a lot of power in `ggplot` to adjust colors of points within plots, and we only touched on the barest essentials in the main lectures. 
+I wanted to add a bit more context on how to modify colors to help you get started with customizing your plots further.
+
+
+We will start with the plot we ended with in the [Intro to ggplot2 Notebook](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/2020-june/intro-to-R-tidyverse/02-intro_to_ggplot2.nb.html), but first a bit of set up. 
+
+### Load ggplot2
+```{r setup}
+library(tidyverse)
+```
+
+### Read in the data and filter
+
+This notebook assumes we are in the `intro-to-R-tidyverse` directory, so the paths are the same as in prior notebooks.
+As before, we will make a new column with the negative log 10 p value and a data frame of just the tumor-normal comparison to work with.
+
+```{r}
+stats_df <- readr::read_tsv(file.path(
+  "data",
+  "gene_results_GSE44971.tsv"
+)) %>%
+  dplyr::mutate( # mutating as we read in!
+    neg_log10_p = -log10(p_value)
+  )
+```
+
+
+
+```{r}
+
+tumor_normal_df <- filter(stats_df, contrast == "astrocytoma_normal" )
+
+```
+
+
+### Sorting for emphasis
+
+One small thing that you probably noticed is that most of the genes have low average expression, with only a few in the higher ranges. 
+We can illustrate that quickly with a density plot:
+
+```{r}
+ggplot(tumor_normal_df, 
+       aes(x = avg_expression)
+       ) + 
+  geom_density()
+```
+
+To emphasize the higher points, we were making them a different color, but we can also make sure they are on top (and not buried) by adjusting the ordering of our data frame.
+Points are plotted in the order they are found in the data frame, so in this case we will want the smallest expression values first, and the largest last, which we can set using the `dplyr::arrange()` function for both of our data frames:
+
+```{r}
+tumor_normal_df <- tumor_normal_df %>% 
+  arrange(avg_expression)
+
+stats_df <- stats_df %>% 
+  arrange(avg_expression)
+```
+
+
+
+### Previous (default colors) plot
+
+Now we are ready to recreate our previous plot (with the point plot ordering modified as described) with points colored by `avg_expression`.
+
+```{r}
+core_plot <- ggplot(tumor_normal_df, 
+       aes(x = log_fold_change, 
+           y = neg_log10_p,
+           color = avg_expression)) + 
+  geom_point(alpha = 0.2) 
+
+core_plot #draw the plot!
+```
+
+That all-blue color scheme isn't the most dramatic, but we can adjust it using some of `ggplot2`s functions that have the form `scale_color_*()` where `*` is some additional word that specifies how the color scale will be constructed.
+
+The first one I will use is scale_color_continuous() to switch to the  [`viridis` color scheme](https://ggplot2.tidyverse.org/reference/scale_viridis.html), which is a nicely color-blind friendly scheme that is used most prominently by the python `matplotlib` library.
+
+```{r}
+core_plot + scale_color_continuous(type = "viridis") 
+```
+
+
+There are a few other color schemes built in as well that you might like, one nice set is from [ColorBrewer](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3).
+For continuous data we will use `scale_color_distiller()`.
+More information on these functions, including the available palettes can be found here: https://ggplot2.tidyverse.org/reference/scale_brewer.html
+
+```{r}
+core_plot + scale_color_distiller(palette = "RdYlGn")
+```
+
+If you want even more control, you can use the more customizable `scale_color_gradient()` function, whcih allows you specify the `low` and `high` colors, filling in the gradient colors between. 
+
+```{r}
+core_plot + scale_color_gradient(low = "blue", high = "orange")
+```
+
+We can use a variant of this, `scale_color_gradientn()`  to specify more spots along the way too, and even where each of those colors should occur in our scale (scaled between 0 and 1) to make an "uneven" gradient. 
+More information can be found [here](https://ggplot2.tidyverse.org/reference/scale_gradient.html).
+
+```{r}
+core_plot + scale_color_gradientn(
+  colors = c("blue", "red", "yellow"),
+  values = c(0, 0.2, 1))
+```
+
+## Changing the legend label
+
+Changing the x and y axis labels was pretty easy with `xlab()` and `ylab`, but we should also probably adjust the legend label, which we skipped last time.
+To do that, I will use the more general `labs()` function, and then specify each aesthetic that I want to give a name to. 
+
+```{r}
+core_plot + 
+  # colors from before
+  scale_color_gradientn(
+    colors = c("blue", "red", "yellow"),
+   values = c(0, 0.2, 1)
+  ) + 
+  labs( # label names
+    x = "Log Fold Change",
+    y = "Negative log10 P value",
+    color = "Average Expression"
+  )
+
+```
+
+## Colors vs fills
+
+One often confusing wrinkle is that ggplot specifies colors of points and lines differently from the fill colors of boxes and other shapes, and we will have to adjust our `scale_color_*()` functions to `scale_fill_*()` functions in many cases.
+
+Below, I will make a plot of the distribution of expression for each contrast form `stats_df`, using a violin plot. 
+To do this, I will set the `contrast` as the x axis and the `avg_expression` as the y. 
+
+```{r}
+ggplot(stats_df, 
+       aes(x = contrast, 
+           y = avg_expression)
+       ) + 
+  geom_violin()
+```
+
+It isn't a very exciting plot, but at least I could make it look nicer with some color, wo I will use `fill` aesthetic to set those to the `contrast` as well.
+```{r}
+
+ggplot(stats_df, 
+       aes(x = contrast, 
+           y = avg_expression,
+           fill = contrast)
+       ) + 
+  geom_violin()
+```
+
+To adjust the fill colors, I will use `scale_fill_manual()`, to specify what I want the colors to be.
+
+```{r}
+ggplot(stats_df, 
+       aes(x = contrast, 
+           y = avg_expression,
+           fill = contrast)
+       ) + 
+  geom_violin() + 
+  scale_fill_manual(values = c("blue", "purple", "orange"))
+```
+
+I don't really recommend trying to pick your own color scheme most of the time, as it can be hard to find one that is easy for users to distinguish easily. 
+A better option is usually to work with a color scheme that has been designed for legibility, like those from the ColorBrewer, as mentioned earlier. 
+These can be access for discrete values with `scale_fill_brewer()`
+
+```{r}
+ggplot(stats_df, 
+       aes(x = contrast, 
+           y = avg_expression,
+           fill = contrast)
+       ) + 
+  geom_violin() + 
+  scale_fill_brewer(palette = "Set2")
+```
+
+
+## Removing the legend
+
+The legend here is kind of redundant, so I am going to remove it with the `theme()` function, using the `legend.position` argument to say that I don't want a legend at all, though as you might guess from the name, I could use it to change where the legend appears instead with values like "top" or "bottom".
+
+```{r}
+ggplot(stats_df, 
+       aes(x = contrast, 
+           y = avg_expression,
+           fill = contrast)
+       ) + 
+  geom_violin() +
+  scale_fill_brewer(palette = "Set2") +
+  theme(legend.position = "none")  
+```
+
