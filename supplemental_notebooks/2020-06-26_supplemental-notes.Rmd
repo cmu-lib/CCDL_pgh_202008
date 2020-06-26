@@ -69,7 +69,8 @@ In practice, we're often interested in genes with low FDR values and the highest
 Yesterday, we saved the object returned by `DESeq2::DESeq()` as an RDS file.
 
 ```{r message=FALSE}
-deseq_object_file <- file.path("results", "NB_cell_line_DESeq_amplified_v_nonamplified.RDS")
+deseq_object_file <- file.path("results", 
+                               "NB_cell_line_DESeq_amplified_v_nonamplified.RDS")
 deseq_object <- readr::read_rds(deseq_object_file)
 ```
 
@@ -118,17 +119,17 @@ If we did not take the absolute value of the `log2FoldChange` in our filtering s
 results_lfc %>%
   data.frame() %>%
   tibble::rownames_to_column("Gene") %>%
-  dplyr::filter(padj < 0.05, abs(log2FoldChange) > 0.584)  # ~1.5x change
+  dplyr::filter(padj < 0.05, abs(log2FoldChange) > 0.585)  # ~1.5x change
 ```
 
 ### Volcano plot
 
 We can make a volcano plot using a [Bioconductor](https://bioconductor.org/) package called [`EnhancedVolcano`](https://bioconductor.org/packages/release/bioc/html/EnhancedVolcano.html).
-Volcano plots provide information about the p-values (y-axis) and the log2 fold change (x-axis).
+Volcano plots provide information about the p-values or FDR (y-axis) and the log2 fold change (x-axis).
 
 ```{r}
 # Here's how we install a Bioconductor package
-BiocManager::install("EnhancedVolcano")
+BiocManager::install("EnhancedVolcano", update = FALSE)
 ```
 
 `EnhancedVolcano::EnhancedVolcano` can take `DESeqResults` directly ([Quick Start Guide](https://github.com/kevinblighe/EnhancedVolcano#quick-start))
@@ -137,14 +138,12 @@ BiocManager::install("EnhancedVolcano")
 EnhancedVolcano::EnhancedVolcano(results_lfc,
                                  lab = rownames(results_lfc),
                                  x = 'log2FoldChange',
-                                 y = 'pvalue')
+                                 y = 'padj')
 ```
 
 From the [`EnhancedVolcano` Quick Start](https://github.com/kevinblighe/EnhancedVolcano#plot-the-most-basic-volcano-plot):
 
 > The default cut-off for log2FC is >|2|; the default cut-off for P value is 10e-6.
-
-Where these p-values are not adjusted (that's why the cutoff is a smaller value).
 
 ## Session Info
 
