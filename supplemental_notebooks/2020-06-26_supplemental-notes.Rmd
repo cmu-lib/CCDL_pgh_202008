@@ -1,0 +1,154 @@
+---
+title: "Intro to bulk RNA-seq supplemental info"
+output: 
+  html_notebook:
+    toc: true
+    toc_float: true
+author: Jaclyn Taroni for CCDL
+date: 2020-06-26
+---
+
+## Introduction
+
+This notebook is designed to address questions that came up in the Intro to Bulk RNA-seq module during CCDL training.
+
+## Project organization
+
+We were asked to create a diagram that illustrates the relationship between different files used throughout the RNA-seq module.
+Here's the diagram that illustrates the RNA-seq pipeline again.
+
+```{r}
+pipeline_overview <- file.path("diagrams", "rna-seq_1.png")
+knitr::include_graphics(pipeline_overview)
+```
+
+The diagram below is a simplifed version of a file tree.
+Directories or folders are shown in bold blue font; files are shown in black font.
+
+```{r}
+gastric_cancer_structure <- file.path("diagrams", "gastric_cancer_structure.png")
+knitr::include_graphics(gastric_cancer_structure)
+```
+
+Each file or data _type_ (FASTQ, quant, metadata, and tximport) is stored in its own folder within `data`. 
+Each dataset/experiment is stored in a separate directory within the directory that indicates the data type. 
+```{r}
+project_structure <- file.path("diagrams", "project_structure.png")
+knitr::include_graphics(project_structure)
+```
+
+An advantage of organizing the directories this way is that it makes it easy to adapt the tximport processing steps for the gastric cancer dataset to process the neuroblastoma cell line by changing the last argument to `file.path()`.
+
+```{r eval=FALSE}
+# The path to the quant files for the gastric cancer dataset
+file.path("data", "quant", "gastric_cancer")
+# The path to the quant files for the neuroblastoma cell line dataset
+file.path("data", "quant", "NB_cell_line")
+```
+
+For data types that have files on a _per sample basis_ (FASTQ, quant), rather than for an entire dataset/experiment, the files for a sample are in a directory named based on a unique identifier for that sample.
+
+Here's an example from the neuroblastoma cell line quant files:
+
+```{r}
+dir(file.path("data", "quant", "NB_cell_line"))
+```
+
+## Filtering DESeq2 DGE results for downstream analysis
+
+During the main session on differential expression analysis, we sorted results based on the Wald statistic. The Wald test is the hypothesis test for comparing two groups; it also produces the p-values in the results that are then corrected for multiple hypothesis testing via Benjamini-Hochberg (BH) adjustment (default settings). 
+
+> BH-adjusted p-values are often referred to as false discovery rates or FDR.
+> For an explainer on FDR values, check out [this excellent video from StatQuest](https://www.youtube.com/watch?v=K8LQSvtjcEo).
+
+In practice, we're often interested in genes with low FDR values and the highest magnitude of log2 fold changes (LFC).
+(This is the rationale behind volcano plots like the one we made in the Intro to R and the Tidyverse module.)
+
+### Load in results from neuroblastoma cell line 
+
+Yesterday, we saved the object returned by `DESeq2::DESeq()` as an RDS file.
+
+```{r message=FALSE}
+deseq_object_file <- file.path("results", "NB_cell_line_DESeq_amplified_v_nonamplified.RDS")
+deseq_object <- readr::read_rds(deseq_object_file)
+```
+
+We need to load in the `DESeq2` library and we'll use the `%>%` operator later.
+
+```{r}
+library(DESeq2)
+`%>%` <- dplyr::`%>%`
+```
+
+### Shrunken log2 foldchanges
+
+There's an additional step we can take to get more accurate log2 fold change estimates to use for visualization or ranking.
+
+> We **highly recommend** taking a look at the resources we adapted this section from!
+>
+> * [Harvard Chan Bioinformatics Core (HBC). _DGE Analysis: Pairwise Comparisons (Wald Test)._](https://hbctraining.github.io/DGE_workshop_salmon/lessons/05_DGE_DESeq2_analysis2.html)
+> * [Love, Anders, and Huber. _Analyzing RNA-seq data with DESeq2._](https://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#log-fold-change-shrinkage-for-visualization-and-ranking)
+
+```{r}
+# Look at the contrasts available
+resultsNames(deseq_object)
+```
+
+We compared the _MYCN_ amplified cell lines to the non-amplified cell lines.
+Shrink the LFC for more accurate estimates.
+
+```{r}
+results_table_mycn <- results(deseq_object, 
+                              alpha = 0.05)
+results_lfc <- lfcShrink(deseq_object, 
+                         coef = "Status_Amplified_vs_Nonamplified",
+                         res = results_table_mycn)
+```
+
+```{r}
+results_lfc
+```
+
+Let's say we wanted to filter based on log2 fold change _and_ FDR before writing to file.
+You can use `dplyr::filter()` to filter based on the `log2FoldChange` and `padj` columns.
+Negative values in the `log2FoldChange` column will have lower expression in the Amplified group.
+If we did not take the absolute value of the `log2FoldChange` in our filtering step, we'd be missing out on those genes!
+
+```{r}
+results_lfc %>%
+  data.frame() %>%
+  tibble::rownames_to_column("Gene") %>%
+  dplyr::filter(padj < 0.05, abs(log2FoldChange) > 0.584)  # ~1.5x change
+```
+
+### Volcano plot
+
+We can make a volcano plot using a [Bioconductor](https://bioconductor.org/) package called [`EnhancedVolcano`](https://bioconductor.org/packages/release/bioc/html/EnhancedVolcano.html).
+Volcano plots provide information about the p-values (y-axis) and the log2 fold change (x-axis).
+
+```{r}
+# Here's how we install a Bioconductor package
+BiocManager::install("EnhancedVolcano")
+```
+
+`EnhancedVolcano::EnhancedVolcano` can take `DESeqResults` directly ([Quick Start Guide](https://github.com/kevinblighe/EnhancedVolcano#quick-start))
+
+```{r}
+EnhancedVolcano::EnhancedVolcano(results_lfc,
+                                 lab = rownames(results_lfc),
+                                 x = 'log2FoldChange',
+                                 y = 'pvalue')
+```
+
+From the [`EnhancedVolcano` Quick Start](https://github.com/kevinblighe/EnhancedVolcano#plot-the-most-basic-volcano-plot):
+
+> The default cut-off for log2FC is >|2|; the default cut-off for P value is 10e-6.
+
+Where these p-values are not adjusted (that's why the cutoff is a smaller value).
+
+## Session Info
+
+```{r}
+sessionInfo()
+```
+
