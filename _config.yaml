@@ -1,29 +1,29 @@
 title: CCDL Virtual Workshop
-training_title: 2020 June Training
+# training_title: 
 # The name of the repository (e.g., 2020-may-training)
 # We use training-specific-template to help with development
-repository: 2020-june-training
+repository: CCDL_pgh_202008
 # Full URL to the repository
 # Again, using training-specific-template to aid in development
-repository_url: https://github.com/AlexsLemonade/2020-june-training
-start_date: 2020-06-22
-end_date: 2020-06-26
+repository_url: https://github.com/cmu-lib/CCDL_pgh_202008
+start_date: 2020-08-17
+end_date: 2020-08-21
 # Specific release in AlexsLemonade/training-modules
 # We use master to make development easier
-release_tag: 2020-june
-# The Docker user will almost always be ccdl, which is why this is here
-docker_user: ccdl
-docker_repo: training_rnaseq
-docker_tag: 2020-june
-# These are for loading Docker images from a file; only relevant for in-person
-docker_targz: ccdl_docker_image.tar.gz
-docker_tar: ccdl_docker_image.tar
-# The image ID and size can be obtained by running `docker images` once you have a copy of the correct image for the training
-docker_image_id: IMAGEID
-docker_size: SIZE
-# How we have historically distributed materials in-person
-training_zip: TRAINING-ZIP
-training_unzip_folder: TRAINING-UNZIP-FOLDER
+# release_tag: 2020-june
+# # The Docker user will almost always be ccdl, which is why this is here
+# docker_user: ccdl
+# docker_repo: training_rnaseq
+# docker_tag: 2020-june
+# # These are for loading Docker images from a file; only relevant for in-person
+# docker_targz: ccdl_docker_image.tar.gz
+# docker_tar: ccdl_docker_image.tar
+# # The image ID and size can be obtained by running `docker images` once you have a copy of the correct image for the training
+# docker_image_id: IMAGEID
+# docker_size: SIZE
+# # How we have historically distributed materials in-person
+# training_zip: TRAINING-ZIP
+# training_unzip_folder: TRAINING-UNZIP-FOLDER
 
 # Theme and theme options
 theme: minima
@@ -33,6 +33,7 @@ header_home:
 header_pages:
   # Note that when first cloned, the `workshop` directory will not exist,
   # as described at https://github.com/AlexsLemonade/training-specific-template#customizing-the-new-repository-for-an-individual-training-workshop
+  - workshop/HOME.md
   - workshop/SCHEDULE.md
   - workshop/workshop-structure.md
   - workshop/software-setup.md

@@ -1,5 +1,5 @@
 ---
-title: CCDL Virtual Training Pittsburgh 2020
+title: 2020 CCDL Virtual Training @ Pittsburgh
 nav_title: Home
 permalink: /
 ---
