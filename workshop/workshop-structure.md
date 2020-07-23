@@ -8,8 +8,7 @@ Our goals in constructing the virtual workshop structure are the following:
 * You will be introduced to R programming, the Tidyverse, and processing and analysis of bulk RNA-seq through a series of hands-on exercises.
 * You are able to ask questions and receive 1:1 assistance as needed during instruction. Because our instruction is almost entirely through hands-on exercises, we want to make sure we can help you through any difficulties or errors you may encounter.
 * You have the opportunity to practice the skills you learn during instruction in consultation sessions with the support of your instructors.
-* You receive consultation about the data you are working with to answer your research questions.
-* You have opportunities to interact with other participants working on similar problems and will work on exercises as part of a small group during some periods of instruction.
+
 
 This document is designed to give you an idea of what your participation in the workshop will be like and outlines the communication processes we have developed in service of these goals.
 
@@ -37,7 +36,7 @@ The host makes sure any time-sensitive questions or problems are addressed durin
 The host may also group you into breakout rooms for exercises as needed.
 * All other instructors are on-hand to monitor the training specific Slack channel, answer questions, provide 1:1 assistance, or help with technology or login issues.
 
-We will clearly identify the role of each instructor at the beginning of instruction. 
+We will clearly identify the role of each instructor at the beginning of instruction.
 
 ### Using communication platforms during instruction
 
@@ -51,7 +50,7 @@ You can read more about how we use Zoom and Slack in the [Zoom procedures](../vi
 | I am stuck with an error message and am no longer able to follow the hands-on instruction | [Use Zoom chat](../virtual-setup/zoom-procedures.md#chat) to [message the meeting host and let them know you need 1:1 assistance](../virtual-setup/zoom-procedures.md#asking-for-11-help-during-instruction) - they will pair you with an available instruction in a [Zoom breakout room](../virtual-setup/zoom-procedures.md#joining-a-breakout-room) |
 | I have a general or conceptual question that can be addressed later in the lecture or asynchronously | Post in the [training-specific Slack channel](../virtual-setup/slack-procedures.md#using-the-training-specific-channel) |
 | I am in a breakout room and want to ask my instructor a question | [Use the `Raise Hand` button on Zoom](../virtual-setup/zoom-procedures.md#interacting-with-instructors-and-providing-feedback), your instructor will ask you to [unmute yourself](../virtual-setup/zoom-procedures.md#audio) and ask your question. You can [use the chat window to message the instructor](../virtual-setup/zoom-procedures.md#chat), who will be designated as a Host or Co-host of the meeting, if you prefer. You may be asked to [share your screen](../virtual-setup/zoom-procedures.md#sharing-your-screen-in-zoom) if you encounter errors. |
-| I am having trouble with my login credentials | [Use Slack to direct message a CCDL staff member](../virtual-setup/slack-procedures.md#using-direct-messages-during-training) that is not leading instruction or the host of the Zoom meeting |
+| I am having trouble with my login credentials | [Use Slack to direct message a an instructor](../virtual-setup/slack-procedures.md#using-direct-messages-during-training) that is not leading instruction or the host of the Zoom meeting |
 | I am having technical difficulties that preclude me from using Zoom and Slack | Email [training@ccdatalab.org](mailto:training@ccdatalab.org) |
 
 ## Consultation sessions
@@ -77,7 +76,7 @@ For these reasons, the main process for communication on consultation days is th
 
 _Remember – if you have a question, another person in the course almost certainly has the same question!_
 
-In addition, because the CCDL team is also currently all-remote, keeping most communication to the training-specific Slack channel allows us to better coordinate our efforts and make sure you get the support you need.
+In addition, because the instructors is also currently all-remote, keeping most communication to the training-specific Slack channel allows us to better coordinate our efforts and make sure you get the support you need.
 
 You can read more about how we use Zoom and Slack in the [Zoom procedures](../virtual-setup/zoom-procedures.md) and [Slack procedures](../virtual-setup/slack-procedures.md) documentation. We've put together the table below to serve as a guide at a glance.
 
@@ -87,21 +86,22 @@ You can read more about how we use Zoom and Slack in the [Zoom procedures](../vi
 | I have a question about an exercise notebook | Post in [the training-specific Slack channel](../virtual-setup/slack-procedures.md#using-the-training-specific-channel) - if you're seeing an error, please include the file name and line number |
 | I am having an issue that requires me to share my screen | Post in [the training-specific Slack channel](../virtual-setup/slack-procedures.md#using-the-training-specific-channel) - an instructor will initiate a Zoom meeting that you can [join from Slack](../virtual-setup/zoom-procedures.md#joining-a-zoom-call-from-slack) |
 | I would like to be paired up with other participants | Post in [the training-specific Slack channel](../virtual-setup/slack-procedures.md#using-the-training-specific-channel) |
-| I have a question that is **_highly specific_** to my data | [Use Slack to direct message a CCDL staff member](../virtual-setup/slack-procedures.md#using-direct-messages-during-training) |
-| I am having trouble with my login credentials | [Use Slack to direct message a CCDL staff member](../virtual-setup/slack-procedures.md#using-direct-messages-during-training) |
+| I have a question that is **_highly specific_** to my data | [Use Slack to direct message an instructor](../virtual-setup/slack-procedures.md#using-direct-messages-during-training) |
+| I am having trouble with my login credentials | [Use Slack to direct message an instructor](../virtual-setup/slack-procedures.md#using-direct-messages-during-training) |
 | I am having technical difficulties that preclude me from using Zoom and Slack | Email [training@ccdatalab.org](mailto:training@ccdatalab.org) |
 
 
 ## Presentations
 
-We will reconvene in a Zoom meeting on Friday at 2pm Eastern for presentations.
+We will reconvene in a Zoom meeting on Friday at 1:30pm Eastern for presentations.
 You will give a short (5 minutes or less) presentation on what you worked on during the week to the rest of the group.
 This is meant to be a low-pressure opportunity to reflect on what you've learned!
 The content and format of the presentation is entirely up to you.
 Here are some examples of what people have presented in the past at our workshops:
 
 * Talked through part of an exercise notebook, highlighting where they ran into issues and how they figured it out
-* Shown a visualization they made with their own data
+* Shown a visualization they made with their own data (Note that we will have limited capacity to help with your own data)
+* Explain the research problem you plan to solve using what you learned this week
 * Walked through a set of slides that included tools they've used in the past and how they compare to what they learned during the workshop
 * Identified some publicly available data sets relevant to their scientific questions and talked about next steps
 
