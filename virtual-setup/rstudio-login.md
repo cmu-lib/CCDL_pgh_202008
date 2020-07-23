@@ -50,7 +50,7 @@ Re-enter your username and new password, and you should return to the session pa
 
 <img src = "screenshots/rstudio-signout.png" width = "300">
 
-If you forget your password at any time, Slack one of the CCDL team members to assist you.
+If you forget your password at any time, Slack one of the instructors to assist you.
 
 ### RStudio Server workspaces page
 
@@ -121,7 +121,7 @@ The files in these folders are accessible in each R session you start.
 Starting and stopping R sessions will refresh what is in your `Environment` tab in the upper right panel.
 We go into more detail on the R environment and other RStudio navigating tidbits in our [guide to RStudio](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/00a-rstudio_guide.md) as well as our [first intro to R notebook](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/01-intro_to_base_R.Rmd).
 
-As always, please reach out to our CCDL team through Slack if you have any questions!
+As always, please reach out to us through Slack if you have any questions!
 
 ## A troubleshooting note:
 
@@ -144,4 +144,4 @@ or by going to the workspaces page (click on the house button) and clicking the 
 <br>
 <br>
 
-If this problem persists, please contact one of our CCDL staff for assistance.
+If this problem persists, please contact one of the instructors for assistance.

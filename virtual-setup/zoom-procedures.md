@@ -96,7 +96,7 @@ In general, the "host" will not be the instructor, but another member of the CCD
 
 ## Joining a Zoom call
 
-CCDL staff will provide you with a link to join a Zoom call for each day during training.
+You will be provided with a link to join a Zoom call for each day during training.
 _Please do not share this link._
 
 **Check your email or the `#2020-pgh-training` Slack channel for the Zoom links each day.

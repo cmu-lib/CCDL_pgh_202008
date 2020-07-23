@@ -36,7 +36,7 @@ We have instructions for setting up Slack for your operating system available.
 
 Course instructors will add you to a private channel specific to your training a few days before the start of your training workshop.
 
-If you are not added to the training specific channel by 3 days prior to the start of training or are having trouble getting started with Slack, please [direct message](#using-direct-messages-during-training) a CCDL staff member (`Chante Bethell`, `Candace Savonen`, `Josh Shapiro` or `Jaclyn N. Taroni`) in Cancer Data Science Slack or email [training@ccdatalab.org](mailto:training@ccdatalab.org).
+If you are not added to the training specific channel by 3 days prior to the start of training or are having trouble getting started with Slack, please [direct message](#using-direct-messages-during-training) an instructor (`Huajin Wang` or `Christina Akirtava`) in Cancer Data Science Slack or email [dataCoLAB@andrew.cmu.edu ](mailto:dataCoLAB@andrew.cmu.edu ).
 
 ### Using the training-specific channel
 
@@ -99,7 +99,7 @@ You can not select a specific window to share.
 
 ### Using direct messages during training
 
-If you have a question that is **_highly specific_** to your own data or a problem with your RStudio credentials, you may [direct message](https://slack.com/help/articles/212281468-What-is-a-direct-message) a CCDL staff member.
+If you have a question that is **_highly specific_** to your own data or a problem with your RStudio credentials, you may [direct message](https://slack.com/help/articles/212281468-What-is-a-direct-message) an instructor.
 
 First, use the new message button in the top right side corner of the Slack interface.
 
