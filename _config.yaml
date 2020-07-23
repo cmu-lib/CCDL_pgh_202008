@@ -1,5 +1,5 @@
 title: CCDL Virtual Workshop
-# training_title: 
+# training_title:
 # The name of the repository (e.g., 2020-may-training)
 # We use training-specific-template to help with development
 repository: CCDL_pgh_202008
@@ -39,7 +39,8 @@ header_pages:
   - workshop/software-setup.md
   - workshop/workshop-materials.md
   - workshop/resources-for-consultation-sessions.md
-author: Childhood Cancer Data Lab
-email: training@ccdatalab.org
+author: CMU Libraries, using material from Childhood Cancer Data Lab
+email: huajinw@cmu.edu
+email: c.akirtava@gmail.com
 twitter_username: CancerDataLab
 github_username:  AlexsLemonade
