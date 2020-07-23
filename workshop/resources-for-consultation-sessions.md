@@ -63,7 +63,7 @@ The metadata is included in your download in a TSV file that starts with `metada
 ### RNA-seq data
 
 The format of the RNA-seq data you can download from the web interface of refine.bio data differs slightly from the pipeline that we cover in training.
-If you identify an RNA-seq experiment from refine.bio that you'd like to use with `DESeq2` (specifically with `DESeqDataSetFromTximport`), **please send a Slack message to a CCDL instructor and they will get you access to the appropriate file.**
+If you identify an RNA-seq experiment from refine.bio that you'd like to use with `DESeq2` (specifically with `DESeqDataSetFromTximport`), **please send a Slack message to an instructor and they will get you access to the appropriate file.**
 
 To retrieve metadata associated with an RNA-seq experiment (e.g., tissue, genotype), you can use an R package called [`SRAdb`](https://www.bioconductor.org/packages/release/bioc/html/SRAdb.html).
 Your instructors have put together a detailed example of how to get a TSV file of sample attributes with the appropriate accession codes for use with RNA-seq data from refine.bio.

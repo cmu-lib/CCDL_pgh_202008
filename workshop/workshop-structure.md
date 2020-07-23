@@ -51,7 +51,7 @@ You can read more about how we use Zoom and Slack in the [Zoom procedures](../vi
 | I have a general or conceptual question that can be addressed later in the lecture or asynchronously | Post in the [training-specific Slack channel](../virtual-setup/slack-procedures.md#using-the-training-specific-channel) |
 | I am in a breakout room and want to ask my instructor a question | [Use the `Raise Hand` button on Zoom](../virtual-setup/zoom-procedures.md#interacting-with-instructors-and-providing-feedback), your instructor will ask you to [unmute yourself](../virtual-setup/zoom-procedures.md#audio) and ask your question. You can [use the chat window to message the instructor](../virtual-setup/zoom-procedures.md#chat), who will be designated as a Host or Co-host of the meeting, if you prefer. You may be asked to [share your screen](../virtual-setup/zoom-procedures.md#sharing-your-screen-in-zoom) if you encounter errors. |
 | I am having trouble with my login credentials | [Use Slack to direct message a an instructor](../virtual-setup/slack-procedures.md#using-direct-messages-during-training) that is not leading instruction or the host of the Zoom meeting |
-| I am having technical difficulties that preclude me from using Zoom and Slack | Email [training@ccdatalab.org](mailto:training@ccdatalab.org) |
+| I am having technical difficulties that preclude me from using Zoom and Slack | Email [dataCoLAB@andrew.cmu.edu](mailto:dataCoLAB@andrew.cmu.edu) |
 
 ## Consultation sessions
 
@@ -88,7 +88,7 @@ You can read more about how we use Zoom and Slack in the [Zoom procedures](../vi
 | I would like to be paired up with other participants | Post in [the training-specific Slack channel](../virtual-setup/slack-procedures.md#using-the-training-specific-channel) |
 | I have a question that is **_highly specific_** to my data | [Use Slack to direct message an instructor](../virtual-setup/slack-procedures.md#using-direct-messages-during-training) |
 | I am having trouble with my login credentials | [Use Slack to direct message an instructor](../virtual-setup/slack-procedures.md#using-direct-messages-during-training) |
-| I am having technical difficulties that preclude me from using Zoom and Slack | Email [training@ccdatalab.org](mailto:training@ccdatalab.org) |
+| I am having technical difficulties that preclude me from using Zoom and Slack | Email [dataCoLAB@andrew.cmu.edu](mailto:dataCoLAB@andrew.cmu.edu) |
 
 
 ## Presentations

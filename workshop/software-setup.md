@@ -5,8 +5,8 @@ nav_title: Required Software
 
 ## Required software
 
-We will be using Zoom for videoconferencing and Slack for a chat forum to communicate during the workshop. 
-If you do not already have the software for these services installed, please follow the instructions linked below. 
+We will be using Zoom for videoconferencing and Slack for a chat forum to communicate during the workshop.
+If you do not already have the software for these services installed, please follow the instructions linked below.
 
 All other software required for the workshop will be installed on our RStudio Server, which you can access via a web browser.
 Keep an eye out for more information about logging into RStudio.
