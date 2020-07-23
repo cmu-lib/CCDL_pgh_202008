@@ -9,7 +9,8 @@ nav_title: Schedule
 Traning material developed by Childhood Cancer Data Lab <br/>
 Alex's Lemonade Stand Foundation [https://www.alexslemonade.org](https://www.alexslemonade.org)
 
-Training adapted and delivered by Huajin Wang and Christina Akirtava, Carnegie Mellon University
+Training adapted and delivered by Huajin Wang and Christina Akirtava, Carnegie Mellon University, as part of the [Data Collaborations Lab](https://cmu-lib.github.io/data-colab/) at CMU Libraries
+
 **Location**: Virtually by Zoom
 
 **Dates**: 08/17/2020 - 08/21/2020

@@ -4,7 +4,12 @@ nav_title: Home
 permalink: /
 ---
 
-## {{site.training_title}}
+<!-- ## {{site.training_title}} -->
+
+Traning material developed by Childhood Cancer Data Lab <br/>
+Alex's Lemonade Stand Foundation [https://www.alexslemonade.org](https://www.alexslemonade.org)
+
+Training adapted and delivered by Huajin Wang and Christina Akirtava, Carnegie Mellon University, as part of the [Data Collaborations Lab](https://cmu-lib.github.io/data-colab/) at CMU Libraries
 
 Dates: {{site.start_date}} through {{site.end_date}}
 
