@@ -105,7 +105,7 @@ First, use the new message button in the top right side corner of the Slack inte
 
 <img src = "screenshots/slack-compose-new-message.png" width="300">
 
-You are then able to search for the CCDL instructors – `Chante Bethell`, `Candace Savonen`, `Josh Shapiro` or `Jaclyn N. Taroni` – and compose your message.
+You are then able to search for the instructors – `Huajin Wang`, `Christina Akirtava`  – and compose your message.
 
 Course instructors may direct you to the training-specific channel for more general questions or to another instructor where appropriate.
 
@@ -132,4 +132,4 @@ Or you can type three backticks <code>```</code> into the message field and form
 
 You are then ready to paste your code or error message into the grey code block.
 
-**If you have questions or are having trouble with Slack features, please reach out to us via direct message or, if direct messaging is not working, please email [training@ccdatalab.org](mailto:training@ccdatalab.org).**
+**If you have questions or are having trouble with Slack features, please reach out to us via direct message or, if direct messaging is not working, please email [dataCoLAB@andrew.cmu.edu](mailto:dataCoLAB@andrew.cmu.edu).**
