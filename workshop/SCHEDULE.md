@@ -21,8 +21,8 @@ Training adapted and delivered by Huajin Wang and Christina Akirtava, Carnegie M
 | Time        | Topic                                          | Location |
 |-------------|------------------------------------------------|----------|
 | **Day 1**   | **2020-08-17** <br> [Introduction to R and the Tidyverse](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/README.md)
-| 12:00       | Welcome, Introductions and Getting Started <br> [Workshop Intro Slides (pdf)](../slides/2020-06-22_01_CCDL_Workshop_Intro.pdf) | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
-| 1:00       | [Introduction to base R](https://alexslemonade.github.io/training-modules/intro-to-R-tidyverse/01-intro_to_base_R.nb.html) <br> [Intro to RStudio Slides (pdf)](../slides/2020-06-22_02_Intro_to_RStudio_Server.pdf) | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
+| 12:00       | Welcome, Introductions and Getting Started <br> [Workshop Intro Slides (pdf)](../slides/01_Workshop_Intro_compressed.pdf) | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
+| 1:00       | [Introduction to base R](https://alexslemonade.github.io/training-modules/intro-to-R-tidyverse/01-intro_to_base_R.nb.html) <br> [Intro to RStudio Slides (pdf)](../slides/02_Intro_to_RStudio_Server.pdf) | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
 | 3:00        | Questions and introduction to the exercise: <br> [Introduction to R Exercise](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/01b-intro_to_base_R_exercise.Rmd) | Zoom: [Breakout Rooms](../virtual-setup/zoom-procedures.md#using-zoom-breakout-rooms) |
 | 3:30 		 | [Consultation session](workshop-structure.md#consultation-sessions) begins | [`#2020-pgh-training` Slack channel](../virtual-setup/slack-procedures.md#general-use) |
 | 5:00        | End             | |
